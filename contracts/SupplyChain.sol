@@ -26,6 +26,7 @@ contract SupplyChain {
 
     mapping(uint32 => participant) public participants; //list of participants
 
+    //The ownership is the relation between a product and a participant
     struct ownership {
         uint32 productId;
         uint32 ownerId;
